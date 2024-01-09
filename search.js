@@ -16,5 +16,5 @@ const search = async (query, count = 1) => {
     return store.similaritySearch(query, count);
 }
 
-console.log(await search('im looking for a movie about a crazy man').then(res => `Here is the movie that you are looking for:\n${res[0].pageContent}`));
+console.log(await search('I\'m looking for a movie about a group of people ruled by a maniac').then(res => `Here is the movie that you are looking for:\n\n${res[0].pageContent}`));
 
